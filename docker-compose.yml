@@ -1,0 +1,16 @@
+services:
+   ftpd_server:
+      image: stilliard/pure-ftpd
+      ports:
+         - "21:21"
+         - "30000-30009:30000-30009"
+      volumes:
+         - type: bind
+           source: /mnt/edisk01
+           target: /mnt/edisk01
+      environment:
+         - PUBLICHOST=${PUBLICHOST}
+         - FTP_USER_NAME=${FTP_USER_NAME}
+         - FTP_USER_PASS=${FTP_USER_PASS}
+         - FTP_USER_HOME=${FTP_USER_HOME}
+      restart: unless-stopped
