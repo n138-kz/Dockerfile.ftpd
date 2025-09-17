@@ -39,6 +39,15 @@
 
 </div>
 
+## .env
+
+```env
+PUBLICHOST=127.0.0.1
+FTP_USER_NAME=ftp
+FTP_USER_PASS=password
+FTP_USER_HOME=/tmp
+```
+
 ## Refs
 
 - [![](https://www.google.com/s2/favicons?size=64&domain=https://github.com)Dockerfile.ftpd](https://github.com/n138-kz/Dockerfile.ftpd/)
