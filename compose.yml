@@ -1,3 +1,4 @@
+name: pure-ftpd
 services:
    ftpd_server:
       image: stilliard/pure-ftpd
